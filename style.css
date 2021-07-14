@@ -1,0 +1,163 @@
+:root {
+    --Violet: hsl(257, 40%, 49%);
+    --Soft-Magenta: hsl(300, 69%, 71%);
+    --Headings-font: 'Poppins', sans-serif;
+    --Body-font: 'Open Sans', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--Violet)
+}
+
+.hero {
+    width: 100vw;
+}
+
+.heroimg {
+    padding-bottom: 40px;
+    margin: 0 auto;
+    background: url(images/bg-mobile.svg) center center/cover no-repeat;;
+}
+
+.heroimg .logo {
+    width: 160px;
+    padding: 40px 0px 50px 30px ;
+}
+
+ .heroimg .img { 
+     display: block;
+     margin: 0 auto;
+    width: 80vw;
+}
+
+.rightside {
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.rightside h1 {
+    font-size: 1.6em;
+    font-family: var(--Headings-font);
+}
+
+.rightside p {
+    font-family: var(--Body-font);
+    padding: 20px 35px;
+    line-height: 25px;
+}
+
+
+.rightside button {
+    padding: 10px 70px;
+    color: var(--Violet);
+    background-color: white;
+    border-radius: 20px;
+    margin: 0 0 50px 0;
+    border: none;
+    cursor: pointer;
+}
+
+.rightside .icon svg {
+    margin: 0 3px;
+    fill: white;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.rightside button:hover {
+    background: var(--Soft-Magenta);
+    color: white;
+}
+
+.rightside .icon svg:hover {
+    fill: var(--Soft-Magenta);
+}
+
+/* media pc */
+
+@media only screen and (min-width: 1080px) {
+
+    body {
+        
+    }
+
+    .hero {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: url(images/bg-desktop.svg) center center/cover no-repeat;
+        padding: 0 60px;
+        height: 100vh;
+    }
+
+    .heroimg {
+        flex: 1;
+        background: unset;
+        width: 50vw;
+    }
+
+    .heroimg .img {
+        width: 50vw;
+    }
+
+    .heroimg .logo {
+        width: 250px;
+        margin-left: -40px;
+    }
+
+    .rightside {
+        flex: 1;
+        width: 50vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        text-align: left;
+        padding-left: 40px;
+        margin: 0;
+        height: 100vh;
+        position: relative;
+    }
+
+    .rightside h1 {
+        font-size: 2.4em;
+    }
+
+    .rightside p {
+        padding: 10px 100px 20px 0px;
+        margin: 0;
+    }
+
+    .rightside button {
+        padding: 13px 60px;
+        font-size: 1.1em;
+        border-radius: 30px;
+    }
+
+    .rightside .icon {
+        position: absolute;
+        bottom: 20px;
+        right: 40px;
+    }
+}
+
+/* media ipad */
+
+@media only screen and (min-width: 768px) {
+    .rightside h1 {
+        font-size: 2em;
+    }
+
+    .rightside p {
+        margin: o auto;
+        
+        font-size: .9em;
+    }
+}
